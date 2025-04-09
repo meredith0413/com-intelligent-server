@@ -8,11 +8,14 @@
 		<version>2.7.18</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.intelligent</groupId>
 	<artifactId>com-intelligent-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>com-intelligent-server</name>
+
 	<description>com-intelligent-server</description>
+
 	<url/>
 	<licenses>
 		<license/>
@@ -41,33 +44,27 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- excel工具 练习的项目自身的依赖-->
+<!--		mysql-->
 		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>4.1.2</version>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version> <!-- 8.x 系列的最新版本 -->
 		</dependency>
 
-		<!-- 新添加的依赖-->
-		<!--  markdown格式转换为html      -->
+<!--		mybatis-plus-->
 		<dependency>
-			<groupId>org.commonmark</groupId>
-			<artifactId>commonmark</artifactId>
-			<version>0.21.0</version>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
+			<version>3.4.3.4</version>
 		</dependency>
 
-		<!--        poi-tl和poi-tl-plugin-markdown是处理markdown格式转换为word格式，处理只处理markdown转换为html,只需要commonnark依赖即可-->
+<!--		文件上传-->
 		<dependency>
-			<groupId>com.deepoove</groupId>
-			<artifactId>poi-tl</artifactId>
-			<version>1.10.1</version>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.4</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.deepoove</groupId>
-			<artifactId>poi-tl-plugin-markdown</artifactId>
-			<version>1.0.3</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -75,12 +72,34 @@
 			<optional>true</optional>
 		</dependency>
 
+		<!--将docx转成html格式-->
 		<dependency>
-			<groupId>com.aspose</groupId>
-			<artifactId>aspose-words</artifactId>
-			<version>21.11</version>
-			<type>pom</type>
+			<groupId>org.zwobble.mammoth</groupId>
+			<artifactId>mammoth</artifactId>
+			<version>1.8.0</version>
 		</dependency>
+		<!--将html转成markdown格式  效果不好-->
+		<dependency>
+			<groupId>com.kotcrab.remark</groupId>
+			<artifactId>remark</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+<!--解析markdown格式不需要删除-->
+		<!-- Apache POI for DOCX parsing -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+		<!-- CommonMark for Markdown generation -->
+		<dependency>
+			<groupId>org.commonmark</groupId>
+			<artifactId>commonmark</artifactId>
+			<version>0.21.0</version>
+		</dependency>
+
+
 
 	</dependencies>
 
