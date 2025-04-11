@@ -58,11 +58,42 @@
 			<version>3.4.3.4</version>
 		</dependency>
 
-<!--		文件上传-->
+		<!--        引入 druid 依赖-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.1.17</version>
+		</dependency>
+		<!--fastjson依赖-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.33</version>
+		</dependency>
+
+		<!--		文件上传-->
 		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
 			<version>1.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>5.8.26</version> <!-- 请确保使用最新版本以获取最新功能和修复 -->
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
 		</dependency>
 
 
@@ -73,33 +104,54 @@
 		</dependency>
 
 		<!--将docx转成html格式-->
-		<dependency>
-			<groupId>org.zwobble.mammoth</groupId>
-			<artifactId>mammoth</artifactId>
-			<version>1.8.0</version>
-		</dependency>
-		<!--将html转成markdown格式  效果不好-->
-		<dependency>
-			<groupId>com.kotcrab.remark</groupId>
-			<artifactId>remark</artifactId>
-			<version>1.0.0</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.zwobble.mammoth</groupId>-->
+<!--			<artifactId>mammoth</artifactId>-->
+<!--			<version>1.8.0</version>-->
+<!--		</dependency>-->
+<!--		&lt;!&ndash;将html转成markdown格式  效果不好&ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>com.kotcrab.remark</groupId>-->
+<!--			<artifactId>remark</artifactId>-->
+<!--			<version>1.0.0</version>-->
+<!--		</dependency>-->
 
 <!--解析markdown格式不需要删除-->
 		<!-- Apache POI for DOCX parsing -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
+			<artifactId>poi</artifactId>
 			<version>5.2.3</version>
 		</dependency>
-		<!-- CommonMark for Markdown generation -->
 		<dependency>
-			<groupId>org.commonmark</groupId>
-			<artifactId>commonmark</artifactId>
-			<version>0.21.0</version>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.2.3</version>
+<!--			<exclusions>-->
+<!--				<exclusion>-->
+<!--					<groupId>commons-io</groupId>-->
+<!--					<artifactId>commons-io</artifactId>-->
+<!--				</exclusion>-->
+<!--			</exclusions>-->
 		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		<!-- CommonMark for Markdown generation -->
+<!--		<dependency>-->
+<!--			<groupId>org.commonmark</groupId>-->
+<!--			<artifactId>commonmark</artifactId>-->
+<!--			<version>0.21.0</version>-->
+<!--		</dependency>-->
 
-
+<!--使用-->
 
 	</dependencies>
 

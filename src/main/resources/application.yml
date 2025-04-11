@@ -11,7 +11,7 @@ spring:
       max-request-size: 20MB
       location: /tmp/uploads #临时存放文件
   datasource:
-    url: jdbc:mysql:///et2107?serverTimezone=UTC
+    url: jdbc:mysql:///etoak?serverTimezone=UTC
     username: root
     password: etoak
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -23,6 +23,8 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto # 主键策略，auto 表示自动生成。
+      logic-delete-field: 0 # 逻辑未删除值(默认为 0)
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
 logging:
   level:
     com.intelligent.mapper: debug
