@@ -72,11 +72,11 @@
 		</dependency>
 
 		<!--		文件上传-->
-		<dependency>
-			<groupId>commons-fileupload</groupId>
-			<artifactId>commons-fileupload</artifactId>
-			<version>1.4</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>commons-fileupload</groupId>-->
+<!--			<artifactId>commons-fileupload</artifactId>-->
+<!--			<version>1.4</version>-->
+<!--		</dependency>-->
 
 		<dependency>
 			<groupId>cn.hutool</groupId>
@@ -88,6 +88,12 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.aliyun.oss</groupId>
+			<artifactId>aliyun-sdk-oss</artifactId>
+			<version>3.17.4</version>
 		</dependency>
 
 		<dependency>
