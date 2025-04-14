@@ -66,23 +66,23 @@ public class RestResponse<T> implements Serializable {
         return this;
     }
 
-    public static Object successOk(Object body) {
+    public static RestResponse successOk(Object body) {
         return builder().resultBody(body).build().success();
     }
 
-    public static Object successOk(Object body, String msg) {
+    public static RestResponse successOk(Object body, String msg) {
         return builder().resultBody(body).message(msg).build().success();
     }
 
-    public static Object failureError() {
+    public static RestResponse failureError() {
         return builder().build().failure();
     }
 
-    public static Object failureError(String code) {
+    public static RestResponse failureError(String code) {
         return builder().code(code).build().failure();
     }
 
-    public static Object failureError(String code, String msg) {
+    public static RestResponse failureError(String code, String msg) {
         return builder().code(code).message(msg).build().failure();
     }
 

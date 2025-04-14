@@ -1,8 +1,6 @@
 package com.intelligent.entity;
 
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableLogic;
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -10,15 +8,14 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.time.LocalDateTime;
 
 /**
- * 文件表
+ * 自动插件模板表
  *
  * @Date 2025/4/14
  * @Version 1.0
  * @author Mysql
  */
 @Data
-@TableName("oss_file")
-public class OssFile {
+public class AgentGeneralTemplate {
 
     /**
      * 主键ID
@@ -26,35 +23,29 @@ public class OssFile {
     private Long id;
 
     /**
-     * 文件名称
+     * 模板名称
      */
-    private String fileName;
+    private String templateName;
 
     /**
-     * 文件后缀
+     * 部门类型
      */
-    private String suffix;
+    private String departmentType;
 
     /**
-     * 文件大小
+     * 原始模板ID
      */
-    private Long fileSize;
+    private String originalFile;
 
     /**
-     * 文件路径
+     * 插入标签的模板ID
      */
-    private String path;
+    private String updateOriginalFile;
 
     /**
-     * 存储空间
+     * 描述
      */
-    private String bucketName;
-
-    /**
-     * 全路径
-     */
-    @TableField(exist = false)
-    private String url;
+    private String describe;
 
     /**
      * 创建时间
@@ -71,9 +62,7 @@ public class OssFile {
     private LocalDateTime updateDate;
 
     /**
-     * 逻辑删除字段
+     * 逻辑删除 0 存在 1删除
      */
-    @TableLogic(value = "0", delval = "1")
     private Integer isDelete;
-
 }

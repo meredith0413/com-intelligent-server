@@ -1,23 +1,27 @@
-package com.intelligent.entity;
+package com.intelligent.vo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableLogic;
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.intelligent.entity.AgentUrlParameter;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
+/**
+ * 标签VO
+ *
+ * @Date 2025/4/13
+ * @Version 1.0
+ * @author Mysql
+ */
 @Data
-@TableName("agent_label")
-public class AgentLabel {
+public class LabelVo {
+
 
     /**
      * 主键ID
      */
-    @TableId(type = IdType.AUTO)
     private Long id;
 
     /**
@@ -53,16 +57,12 @@ public class AgentLabel {
     private LocalDateTime createDate;
 
     /**
-     * 修改时间
+     * 入参集合
      */
-    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
-    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime updateDate;
+    private List<AgentUrlParameter> requestList;
 
     /**
-     * 逻辑删除 0 存在 1删除
+     * 反参集合
      */
-    @TableLogic(value = "0", delval = "1")
-    private Integer isDelete;
-
+    private List<AgentUrlParameter> responseList;
 }

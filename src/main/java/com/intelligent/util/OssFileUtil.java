@@ -25,9 +25,10 @@ public class OssFileUtil {
                 outputStream.write(buffer, 0, bytesRead);
             }
         }catch (Exception e){
-
+            e.printStackTrace();
         }
     }
+
 
 
 }

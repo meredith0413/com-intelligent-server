@@ -1,0 +1,5 @@
+2025-04-13 19:54:02.673 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8002 (http)
+2025-04-13 19:54:02.877 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1537 ms
+2025-04-13 19:54:07.318 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8002 (http) with context path '/intelligent'
+2025-04-13 19:55:48.316 [http-nio-8002-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2025-04-13 19:55:48.317 [http-nio-8002-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms

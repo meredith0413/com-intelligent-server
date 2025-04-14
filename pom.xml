@@ -58,25 +58,16 @@
 			<version>3.4.3.4</version>
 		</dependency>
 
-		<!--        引入 druid 依赖-->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid</artifactId>
-			<version>1.1.17</version>
-		</dependency>
 		<!--fastjson依赖-->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>1.2.33</version>
 		</dependency>
-
-		<!--		文件上传-->
-<!--		<dependency>-->
-<!--			<groupId>commons-fileupload</groupId>-->
-<!--			<artifactId>commons-fileupload</artifactId>-->
-<!--			<version>1.4</version>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>cn.hutool</groupId>
@@ -133,12 +124,7 @@
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.2.3</version>
-<!--			<exclusions>-->
-<!--				<exclusion>-->
-<!--					<groupId>commons-io</groupId>-->
-<!--					<artifactId>commons-io</artifactId>-->
-<!--				</exclusion>-->
-<!--			</exclusions>-->
+
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -150,14 +136,6 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.11.0</version>
 		</dependency>
-		<!-- CommonMark for Markdown generation -->
-<!--		<dependency>-->
-<!--			<groupId>org.commonmark</groupId>-->
-<!--			<artifactId>commonmark</artifactId>-->
-<!--			<version>0.21.0</version>-->
-<!--		</dependency>-->
-
-<!--使用-->
 
 	</dependencies>
 
